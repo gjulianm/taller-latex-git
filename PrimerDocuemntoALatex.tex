@@ -8,9 +8,11 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+
 \usepackage{color,xspace,hyperref}
 \usepackage{float}
 \usepackage{caption}
+
 
 \author{}
 \date{}
@@ -25,10 +27,10 @@
 
 \end{abstract}
 
-\section{Fórmulas famosas}
+\section{F\'ormulas famosas}
 
 \subsection{Suma de los $n$ primeros enteros}
-
+\[\sum_{j=1}^{N}j=\frac{N*(N+1)}{2}\]
 % Escribir la serie y la ecuación
 
 \subsection{Suma de los cuadrados de los $n$ primeros enteros}
@@ -41,11 +43,18 @@
 
 \subsection{Logaritmo de un producto}
 
-% Escribir la fórmula del logaritmo del producto
+\begin{equation}[\log(a*b)=\log(a)+\log(b)\end{equation}]
+
+$\log a·b = \log a + \log b\quad \forall a,b > 0$\label{form_log}
 
 \subsection{Identidades notables}
 
 % Escribir una enumeracion con las 3 igualdades notarias (a+b)^2, (a-b)^2, (a+b)(a-b)
+\begin{enumerate}
+\item $ \left(a+b\right)^2 = a^2 + 2ab + b^2 $
+\item $ \left(a-b\right)^2 = a^2 - 2ab + b^2 $
+\item $ \left(a+b\right)\left(a-b\right) = a^2-b^2 $
+\end{enumerate}
 
 \section{Desarrollo de Taylor}
 
@@ -73,6 +82,13 @@ Desarrollos de taylor de las funciones:
 \end{itemize}
 
 \section{Matrices}
+\[ \begin{pmatrix}
+   0 & 2 & 0 & 0 & 0 & 0 & 0 \\
+   0 & 0 & 5 & 0 & 0 & 0 & 1 \\
+   0 & 0 & 0 & 0 & 4 & 2 & 0 \\
+   0 & 4 & 0 & 0 & 0 & 0 & 0 \\
+   0 & 0 & 3 & 0 & 0 & 0 & 1
+\end{pmatrix} \]
 
 % Escribir la matriz
 % 0 2 0 0 0 0 0
@@ -88,8 +104,18 @@ Desarrollos de taylor de las funciones:
 \section{Tablas}
 
 % Escribir una tabla de 4 columnas y 5 filas rellena de 0s
-
-
+\begin{table}[hbtp]
+\centering
+\begin{tabular}{c | c | c | c}
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0
+\end{tabular}
+\caption{Leyenda}
+\label{tbl:Tabla}
+\end{table}
 
 
 \end{document}
