@@ -12,7 +12,6 @@
 \usepackage{color,xspace,hyperref}
 \usepackage{float}
 \usepackage{caption}
-\usepackage[spanish, es-tabla,es-noquoting,es-noshorthands]{babel}
 
 
 \author{}
@@ -28,10 +27,10 @@
 
 \end{abstract}
 
-\section{Fórmulas famosas}
+\section{F\'ormulas famosas}
 
 \subsection{Suma de los $n$ primeros enteros}
-
+\[\sum_{j=1}^{N}j=\frac{N*(N+1)}{2}\]
 % Escribir la serie y la ecuación
 
 \subsection{Suma de los cuadrados de los $n$ primeros enteros}
@@ -70,9 +69,13 @@ Desarrollos de taylor de las funciones:
 \begin{itemize}
 \item $f(x)=e^x$
 
+\[ \sum_{n=0}^{\infty} \frac{x^n}{n!}  =  1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ...\]
+
 % Escribir desarrollo de Taylor de esta función
 
 \item $f(x) = \sin (x)$
+
+\[ \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!}·x^{2n+1}  =  x - \frac{x^3}{3!} + \frac{x^5}{5!} + ...\]
 
 %Escribir desarrollo de Taylor de esta función
 
@@ -110,8 +113,18 @@ Desarrollos de taylor de las funciones:
 \section{Tablas}
 
 % Escribir una tabla de 4 columnas y 5 filas rellena de 0s
-
-
+\begin{table}[hbtp]
+\centering
+\begin{tabular}{c | c | c | c}
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0
+\end{tabular}
+\caption{Leyenda}
+\label{tbl:Tabla}
+\end{table}
 
 \end{document}
 
