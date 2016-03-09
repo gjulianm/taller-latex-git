@@ -10,8 +10,6 @@
 \usepackage{amsthm}
 
 \usepackage{color,xspace,hyperref}
-\usepackage{float}
-\usepackage{caption}
 
 
 \author{}
@@ -30,14 +28,28 @@
 \section{F\'ormulas famosas}
 
 \subsection{Suma de los $n$ primeros enteros}
+
 \[\sum_{j=1}^{N}j=\frac{N*(N+1)}{2}\]
+
 % Escribir la serie y la ecuación
 
 \subsection{Suma de los cuadrados de los $n$ primeros enteros}
 
+
+
+\textit{\textcolor{green}{{\large B}{\small onito:}}} \[ \sum_{i=1}^\mathcal{N} \frac{n(n+1)(2n+1)}{6} \]
+
+\textit{\textcolor{blue}{y en línea: }}$\sum_{i=1}^\mathcal{N} \frac{n(n+1)(2n+1)}{6} $
+
+\[ \sum_{k=1}^n k^2 = 1^2 + 2^2 + ... + n^2 = \frac{n(n+1)(2n+1)}{6}\]
 % Escribir la serie y la ecuación
 
 \subsection{Teorema fundamental del cálculo}
+
+
+\begin{equation} F(x)=\int^{g(x)} h(t) dt \end{equation}
+\begin{equation} F'(x)=h(g(x))*g'(x) \end{equation}
+
 
 % Escribir el teorema fundamental del cálculo
 \[F(x) = \int_a^xf(x)dt\]
@@ -45,7 +57,7 @@
 
 \subsection{Logaritmo de un producto}
 
-\begin{equation}[\log(a*b)=\log(a)+\log(b)\end{equation}]
+\begin{equation}\log(a*b)=\log(a)+\log(b)\end{equation}
 
 $\log a·b = \log a + \log b\quad \forall a,b > 0$\label{form_log}
 
@@ -71,13 +83,9 @@ Desarrollos de taylor de las funciones:
 \begin{itemize}
 \item $f(x)=e^x$
 
-\[ \sum_{n=0}^{\infty} \frac{x^n}{n!}  =  1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ...\]
-
 % Escribir desarrollo de Taylor de esta función
 
 \item $f(x) = \sin (x)$
-
-\[ \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!}·x^{2n+1}  =  x - \frac{x^3}{3!} + \frac{x^5}{5!} + ...\]
 
 %Escribir desarrollo de Taylor de esta función
 
@@ -112,6 +120,7 @@ Desarrollos de taylor de las funciones:
 % Escribir la traspuesta de la matriz anterior
 
 \[ \begin{pmatrix}
+
    0 & 0 & 0 & 0 & 0 \\
    2 & 0 & 0 & 4 & 0  \\
    0 & 5 & 0 & 0 & 3 \\
@@ -128,7 +137,8 @@ Desarrollos de taylor de las funciones:
 	0 & 0 & 4 & 0 & 0 \\
 	0 & 0 & 2 & 0 & 0 \\
 	0 & 1 & 0 & 0 & 1
-\end{pmatrix}\]
+\end{pmatrix} \]
+
 
 
 \section{Tablas}
@@ -146,6 +156,7 @@ Desarrollos de taylor de las funciones:
 \caption{Leyenda}
 \label{tbl:Tabla}
 \end{table}
+
 
 \end{document}
 
