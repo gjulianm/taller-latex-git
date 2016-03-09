@@ -10,9 +10,6 @@
 \usepackage{amsthm}
 
 \usepackage{color,xspace,hyperref}
-\usepackage{float}
-\usepackage{caption}
-\usepackage[spanish, es-tabla,es-noquoting,es-noshorthands]{babel}
 
 
 \author{}
@@ -28,19 +25,20 @@
 
 \end{abstract}
 
-\section{Fórmulas famosas}
+\section{F\'ormulas famosas}
 
 \subsection{Suma de los $n$ primeros enteros}
-\textit{\textcolor{green}{{\large B}{\small onito}}} \[ \sum_{i=1}^\mathcal{N} \frac{n(n+1)}{2} \]
 
-\textit{\textcolor{blue}{y en línea: }}$\sum_{i=1}^\mathcal{N} \frac{n(n+1)}{2} $
-
-
-
+\[\sum_{j=1}^{N}j=\frac{N*(N+1)}{2}\]
 
 % Escribir la serie y la ecuación
 
 \subsection{Suma de los cuadrados de los $n$ primeros enteros}
+
+
+\textit{\textcolor{green}{{\large B}{\small onito:}}} \[ \sum_{i=1}^\mathcal{N} \frac{n(n+1)(2n+1)}{6} \]
+
+\textit{\textcolor{blue}{y en línea: }}$\sum_{i=1}^\mathcal{N} \frac{n(n+1)(2n+1)}{6} $
 
 % Escribir la serie y la ecuación
 
@@ -107,8 +105,18 @@ Desarrollos de taylor de las funciones:
 \section{Tablas}
 
 % Escribir una tabla de 4 columnas y 5 filas rellena de 0s
-
-
+\begin{table}[hbtp]
+\centering
+\begin{tabular}{c | c | c | c}
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0
+\end{tabular}
+\caption{Leyenda}
+\label{tbl:Tabla}
+\end{table}
 
 
 \end{document}
