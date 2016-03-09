@@ -13,7 +13,6 @@
 \usepackage{changepage}
 \usepackage{float}
 \usepackage{caption}
-\usepackage{MathUnicode}
 \usepackage[spanish, es-tabla,es-noquoting,es-noshorthands]{babel}
 
 \author{}
@@ -88,8 +87,18 @@ Desarrollos de taylor de las funciones:
 \section{Tablas}
 
 % Escribir una tabla de 4 columnas y 5 filas rellena de 0s
-
-
+\begin{table}[hbtp]
+\centering
+\begin{tabular}{c | c | c | c}
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0 \\ \hline
+0 & 0 & 0 & 0
+\end{tabular}
+\caption{Leyenda}
+\label{tbl:Tabla}
+\end{table}
 
 
 \end{document}
